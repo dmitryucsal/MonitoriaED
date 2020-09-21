@@ -13,7 +13,7 @@ public class Main {
         System.out.println("O recursivo deu "+ rmdc);
 
         m = 12;
-        n = 14;
+        n = 18;
 
         mdc = Exercicio01.CalculaMDC(m, n);
         rmdc = Exercicio01.recursivaMDC(m,n);
@@ -28,7 +28,7 @@ public class Main {
         int fatorial = Exercicio02.fatorial(n);
         System.out.println("O fatorial de "+n+" é "+fatorial);
 
-        n = 12;
+        n = 11;
         fatorial = Exercicio02.fatorial(n);
         System.out.println("O fatorial de "+n+" é "+fatorial);
 

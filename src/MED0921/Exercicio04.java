@@ -8,11 +8,13 @@ public class Exercicio04 {
     //84 n%10 = 4
 
     public static int somaDigitos(int n) {
+
         if(n==0) {
             return 0;
         } else {
             System.out.println("n%10 é igual a "+n%10+" onde n é igual a "+n);
             return n%10 + somaDigitos(n/10);
         }
+
     }
 }

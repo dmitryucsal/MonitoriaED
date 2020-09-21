@@ -15,17 +15,20 @@ package MED0921;
 public class Exercicio01 {
     public static int CalculaMDC(int m, int n) {
         int r;
+
         do {
             r = m % n;
             m = n;
             n = r;
         } while (r != 0);
+
         return m;
     }
 
     public static int recursivaMDC(int m, int n) {
         int r;
         r = m % n;
+
         if (r == 0) {
             return n;
         } else {

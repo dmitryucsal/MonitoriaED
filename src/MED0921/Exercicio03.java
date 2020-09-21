@@ -5,11 +5,13 @@ public class Exercicio03 {
     // um número inteiro na base decimal e realize a conversão deste número para base binária.
 
     public static int decimalParaBinario(int decimal) {
+
         if(decimal == 0) {
             return 0;
         } else {
             return decimal % 2 + 10 * (decimalParaBinario(decimal/2));
         }
+
     }
 
 
