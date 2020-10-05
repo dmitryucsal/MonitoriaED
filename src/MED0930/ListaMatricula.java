@@ -1,5 +1,9 @@
 package MED0930;
 
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
+
 public class ListaMatricula {
     Node inicio;
     String linhas = "__________________________";
@@ -70,7 +74,34 @@ public class ListaMatricula {
     public int getTamanho() {
         return tamanho;
     }
+
     public void alfabetica() {
+        for(int i = 0; i < getTamanho(); i++) {
+            Node atual = inicio;
+            Node segundo = inicio.proximo;
+            for(int j= 0; j < getTamanho()-1; j++) {
+                if(atual.nome.charAt(0) > segundo.nome.charAt(0)) {
+                    int mat = atual.matricula;
+                    String nome = atual.nome;
+                    String curso = atual.curso;
+
+                    atual.matricula = segundo.matricula;
+                    atual.nome = segundo.nome;
+                    atual.curso = segundo.curso;
+
+                    segundo.matricula = mat;
+                    segundo.nome = nome;
+                    segundo.curso = curso;
+
+                }
+                atual = segundo;
+                segundo = segundo.proximo;
+
+            }
+        }
+    }
+
+    public void alfabeticaBraba() {
         int charat = 0;
         for(int i = 0; i < getTamanho(); i++) {
             Node atual = inicio;

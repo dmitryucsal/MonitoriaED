@@ -7,9 +7,8 @@ public class MatriculaMain {
         lista.adicionar(334,"Carlos Pinho", "Engenharia de Software");
         lista.adicionar(002,"Osvaldo","Computação");
         lista.adicionar(132,"Ricardo Oliveira","Engenharia de Software");
-        lista.adicionar(134,"Ricardo Oliveira","Análise de Sistemas");
-        lista.adicionar(136,"Racardo Bastos","Engenharia de Software");
-        lista.adicionar(139,"Rabardo Bastos","Engenharia de Software");
+        lista.adicionar(233, "Angela ED", "Engenharia de requisitos");
+
 
         lista.listar();
 

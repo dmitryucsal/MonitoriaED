@@ -5,4 +5,5 @@ public class Node {
     String nome;
     String curso;
     Node proximo;
+
 }
